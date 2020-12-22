@@ -31,7 +31,7 @@ body {
 }
 
 .app__header > h1 {
-  color: #fc3c3c;
+  color: rgb(68, 68, 68);
   font-size: 2rem;
 }
 
@@ -65,12 +65,43 @@ body {
   margin: 20px 0px;
 }
 
-.chart {
-  
-}
-
 .MuiCardContent-root {
   height: 100%;
+}
+
+.blink_me {
+  color: red;
+  animation: blinker 2s linear infinite;
+}
+
+.app__footer {
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(68, 68, 68);
+  text-decoration: none;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: rgb(0, 255, 34);
+}
+
+.app__footer a {
+  text-decoration: none;
+}
+
+.app__footer a:hover {
+  text-decoration: underline;
+}
+
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 990px) {

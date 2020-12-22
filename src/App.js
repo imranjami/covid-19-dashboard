@@ -78,7 +78,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="app__header">
-        <h1>Live Covid-19 Statistics</h1>
+        <h1><span className="blink_me">Live</span> Covid-19 Statistics</h1>
         <FormControl className="app__dropdown">
           <Select
             variant="outlined"
@@ -96,7 +96,7 @@ const App = () => {
           <CardContent>
             <div className="app__information">
               <div className="app__table">
-                <h3>Live Cases by Country</h3>
+                <h3>Cases by Country</h3>
                 <Table countries={tableData} />
               </div>
               <div className="app__chart">
@@ -139,6 +139,10 @@ const App = () => {
             casesType={casesType}
           />
         </div>
+      </div>
+      <div className="app__footer">
+        <p>Live data provided by <a className="red" href="https://disease.sh/">disease.sh</a></p>
+        <p>Designed and implemented by <a className="green" href="https://imranjami.github.io/">Imran Jami</a></p>
       </div>
       
       

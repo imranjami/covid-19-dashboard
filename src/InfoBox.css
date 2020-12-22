@@ -11,22 +11,30 @@
 }
 
 .infoBox--selected {
-  border-top: 10px solid greenyellow;
+  border-bottom: 10px solid rgb(0, 255, 34);
 }
 
 .infoBox--red {
-  border-color: red;
+  border-color: #ff002f;
 }
 
 .infoBox__cases--green {
-  color: lightgreen !important;
+  color: rgb(0, 255, 34) !important;
+}
+
+.infoBox__text {
+  color: rgb(70, 70, 70);
+}
+
+h4 {
+  font-size: 0.8rem;
 }
 
 .infoBox__cases {
-  color: #cc1034;
+  color: #ff002f;
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 .infoBox__total {
